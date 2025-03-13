@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanas</title>
+    <link rel="stylesheet" href="css/carga.css">
+    <link rel="stylesheet" href="css/contenido.css">
+</head>
+<body>
+    <!-- Inicio de carga -->
+    <div class="intro">
+        <img src="img/mcdonalds-logo-8.png" alt="clarkode logo" width="20%">
+        <h1 class="logo">
+            <span class="logo-parts">mcdonalds</span>
+            <br>
+            <span class="logo-parts">Ven</span>
+            <span class="logo-parts">y come Rico</span>
+        </h1>
+        
+        <div id="contenedor_carga">
+            <div id="carga"></div>
+        </div>
+        <script>
+            window.onload = function(){
+                var contenedor = Document.getElementById(
+                    'contenedor_carga');
+                
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+            }
+        </script>
+    </div>
+    <!-- fin de carga -->
+    <!-- contenido inicial -->
+    <div class="content">
+        <a href="paginas/principal.html">
+        <img id="logo" src="img/logo1.svg" height="50px">
+        </a>
+        <nav class="select">
+            <ul>
+                <li><a id="ope" href="">Productos</a></li>
+                <li><a id="ope" href="">Acerca de..</a></li>
+                <li><a id="ope" href="">Reclutadores</a></li>
+            </ul>
+        </nav>
+        <h1 id="frase">Como quieres tu pedido?</h1>
+        <div class="botones">
+            <a href="">
+                <button>
+                    <img src="img/retiro.svg" height="35px">
+                    Pide y retira
+                </button>
+            </a>
+            <a href="">
+                <button>
+                <img src="img/delivery.svg" alt="">
+                McDelivery
+                </button>
+            </a>
+        </div>
+    </div>
+    <!-- fin de contenido inicial -->
+    <div class="producto">
+        <a class="cosa" href="">
+            <img src="img/hamburguesa" alt="">
+            <h1>hamburguesas</h1>
+        </a>
+
+        <a class="cosa" href="">
+            <img src="img/pollo" alt="">
+            <h1>Pollo McCrispy</h1>
+        </a>
+
+        <a class="cosa" href="">
+            <img src="img/acompañar" alt="">
+            <h1>Para Acompañar</h1>
+        </a>
+
+        <a class="cosa" href="">
+            <img src="img/postres" alt="">
+            <h1>Postres</h1>
+        </a>
+
+        <a class="cosa" href="">
+            <img src="img/bebidas" alt="">
+            <h1>Bebidas</h1>
+        </a>
+
+        <a class="cosa" href="">
+            <img src="img/nuggets" alt="">
+            <h1>McNuggets</h1>
+        </a>
+    </div>
+<script src="Js/animacion.js"></script>
+</body>
+</html>

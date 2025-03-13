@@ -1,0 +1,136 @@
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-size: 68.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0px;
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+header, .main, footer{
+    background: #fff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    height: 600px;
+    font-size: 2rem;
+    background-repeat:no-repeat;
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,black, white);
+    opacity: 0.6;
+}
+
+
+#logo{
+    position: relative;
+    left: 50px;
+}
+.select{
+    overflow: hidden;
+    margin: 20px auto;
+    box-sizing: border-box;
+    top: 10px;
+    left: 30px;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+}
+nav ul li a{
+    padding: 10px 20px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: black;
+    color: white;
+}
+
+#frase{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    color: whitesmoke;
+}
+
+.botones{
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+/**para todos los botones**/
+button{
+    background-color: white;
+    border: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.botones button {
+    margin-right: 60px;
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+/**fin de botones**/
+
+/**productos**/
+.producto{
+    background: orange;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    position: relative;
+}
+.cosa{
+    position: relative;
+    left: 10%;
+    text-decoration: none;
+    margin-right: 100px;
+    margin-left: 50px;
+    color: black;
+}
+
+.cosa:hover{
+    width: 150px;
+    background: rgb(188, 130, 23);
+    color: white;
+}
+/** Fin de productos **/
